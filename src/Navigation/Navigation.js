@@ -32,7 +32,7 @@ const renderTab = item =>
   <Tab label={item}/>;
 
 let Navigation = ({tabIndex, dispatch}) => (
-  <Grid>
+  <Grid container align={'center'} justify={'center'}>
     {renderAppBar(tabIndex, dispatch)}
   </Grid>
 )
