@@ -19,13 +19,16 @@ const renderAppBar = (tabIndex, dispatch) =>
 const renderTabs = (tabIndex, dispatch) =>
   <Tabs
    className={'navigationTabs'}
-   indicatorColor={"#4885ed"}
+   indicatorColor={"#FFFFFF"}
    value={tabIndex}
    onChange={(event, value) => handleChange(value, dispatch)}
    >
-    {renderTab('Please')}
-    {renderTab('Give Us')}
-    {renderTab('Gifts')}
+    {renderTab('Home')}
+    {renderTab('About Us')}
+    {renderTab('Location')}
+    {renderTab('Registry')}
+    {renderTab('RSVP')}
+    {renderTab('Contact Us')}
   </Tabs>;
 
 const renderTab = item =>

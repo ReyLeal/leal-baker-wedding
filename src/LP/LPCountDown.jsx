@@ -70,9 +70,6 @@ export default class CountDown extends Component {
     render = () => {
         return (
             <Grid className={'lpCountdown'} container justify={'center'} align={'center'}>
-                <Grid className={'countDownTitle'} container justify={'center'} align={'center'}>
-                    T-Minus
-                </Grid>
                 <Grid container justify={'center'} align={'center'}>
                     {this.countDownTime('years')}
                     {this.countDownTime('months')}
