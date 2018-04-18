@@ -3,6 +3,14 @@ import {Grid} from 'material-ui'
 import moment from 'moment';
 
 const WEDDING_DATE = '3/14/2020 00:00:00';
+const SINGULAR_TIME = {
+    years : 'year',
+    months : 'month',
+    days : 'day',
+    hours : 'hour',
+    minutes : 'minute',
+    seconds : 'second',
+};
 
 
 export default class CountDown extends Component {
@@ -29,6 +37,13 @@ export default class CountDown extends Component {
         setInterval(() => {this.formatTime('hours')}, 1000);
         setInterval(() => {this.formatTime('minutes')}, 1000);
         setInterval(() => {this.formatTime('seconds')}, 1000);
+    }
+
+    formatPlurality = unit => {
+        const isNumber = !Number.isNaN(this.state[unit]);
+        const isOne = parseInt(this.state[unit]) === 1;
+
+        return isNumber && isOne ? SINGULAR_TIME[unit] : unit;
     }
 
     formatTime = (unit) => {
@@ -63,7 +78,7 @@ export default class CountDown extends Component {
 
     countDownTime(unit) {
         return (
-            <Grid className={'countDown'} item xs={2}>{this.state[unit]} {unit}</Grid>
+            <Grid className={'countDown'} item xs={2}>{this.state[unit]} {this.formatPlurality(unit)}</Grid>
         );
     }
 

@@ -32,7 +32,7 @@ const renderTabs = (tabIndex, dispatch) =>
   </Tabs>;
 
 const renderTab = item =>
-  <Tab label={item}/>;
+  <Tab className={'tab'} label={item}/>;
 
 let Navigation = ({tabIndex, dispatch}) => (
   <Grid container align={'center'} justify={'center'}>
