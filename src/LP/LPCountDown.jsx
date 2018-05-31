@@ -41,7 +41,7 @@ export default class CountDown extends Component {
 
     formatPlurality = unit => {
         const isNumber = !Number.isNaN(this.state[unit]);
-        const isOne = parseInt(this.state[unit]) === 1;
+        const isOne = parseInt(this.state[unit], 10) === 1;
 
         return isNumber && isOne ? SINGULAR_TIME[unit] : unit;
     }

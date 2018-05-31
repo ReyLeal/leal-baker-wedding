@@ -1,17 +1,20 @@
 html {
-    font-family: 'Quicksand', sans-serif!important;
+    font-family: 'Bitter', serif!important;
+    font-weight: 500!important;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
     margin: 0;
-    background-color: rgba(30,30,30,0.6);
+    background: repeat url('../media/BPattern.png');
 }
 
 .navigationTabs  {
     margin: 0 auto;
     align-self: flex-end;
     height: 3rem;
-    font-size: 1rem!important;
+    font-size: .75rem!important;
+    font-weight: 500!important;
 }
 
 .navBar {
@@ -20,11 +23,17 @@ body {
 }
 
 .navBackground {
-    background-color: rgba(0,0,0,0.55)!important;
+    background-color: rgba(0,0,0,0.20)!important;
 }
 
 .lpContainer {
-    background: no-repeat center url('../media/lpBackground.jpg');
+    background:
+            no-repeat
+            linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+            ),
+            center url('../media/lpBackground.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -42,54 +51,83 @@ body {
     border: solid 1px rgba(0,0,0,0.3)!important;
     box-shadow: 0 0 4rem -1rem!important;
     margin-top: auto!important;
-    margin-bottom: -3rem!important;
+    margin-bottom: -2.5rem!important;
 }
 
 .countDownTitle {
     font-size: 5rem;
     color: black;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
 }
 .countDown {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     text-transform: capitalize;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
 }
 
 .lpCountdown {
     margin-top: -4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(0,0,0,0.35);
     align-self: flex-start;
 }
 
 .titleSection {
-    height: 15rem;
+    margin-top: 30vh!important;
     border-radius: 50px 50px 0 0;
-    text-align: left;
-    padding: 2rem;
-    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
-    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .titleHeader {
     color: white;
-    font-size: 4rem;
-    font-weight: 900;
-    font-family: 'Amatic SC', cursive;
+    font-size: 5.25rem;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
+}
+
+.dateSection {
+    font-family: 'Bitter', serif!important;
+    font-weight: 400!important;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.saveTheDate {
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+
 }
 
 .titleContainer {
-    align-self: flex-start;
-    margin-top: 10rem;
-    padding-left: 5rem;
+    align-self: center;
 }
 
 .tab * {
-    font-family: 'Amatic SC', cursive!important;
-    font-size: 1.5rem!important;
+    font-family: 'Bitter', serif!important;
+    font-size: 1rem!important;
+    font-weight: 500!important;
+}
+
+.ourStory {
+    height: 40vh;
+}
+
+
+.containerTitle {
+    font-size: 3rem;
+    color: black!important;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
+}
+
+.containerBody {
+    color: gray!important;
 }
