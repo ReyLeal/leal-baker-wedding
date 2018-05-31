@@ -26,10 +26,10 @@ function tabs(state = defaultStore, action) {
     switch (action.type) {
         case "CHANGE_TABS" :
             // state = {...state, tabIndex : action.value}
-            redirectNavigation(action.value)
+            redirectNavigation(action.value);
             break;
         case "CHANGE_TABS_NS" :
-            state = {...state, tabIndex : action.value}
+            state = {...state, tabIndex : action.value};
             break;
         default:
             break;
