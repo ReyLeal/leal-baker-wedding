@@ -78,7 +78,16 @@ export default class CountDown extends Component {
 
     countDownTime(unit) {
         return (
-            <Grid className={'countDown'} item xs={2}>{this.state[unit]} {this.formatPlurality(unit)}</Grid>
+            <Grid className={'countDown'} item xs={4} sm={2}>
+                <div className={'timeContainer'}>
+                    <div className={'timeNumber'}>
+                        {this.state[unit]}
+                    </div>
+                    <div className={'timeUnits'}>
+                        {this.formatPlurality(unit)}
+                    </div>
+                </div>
+            </Grid>
         );
     }
 

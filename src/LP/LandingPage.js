@@ -1,7 +1,6 @@
 import React from 'react';
 import {Grid} from 'material-ui'
 import NextNavigation from './NextNavigation'
-import LPCountDown from './LPCountDown'
 import { TitleContainer } from './TitleContainer'
 
 let LandingPage = () => (
@@ -12,7 +11,6 @@ let LandingPage = () => (
           </Grid>
           <Grid className={'CDButtonContainer'} item xs={12}>
               <NextNavigation />
-              <LPCountDown />
           </Grid>
       </Grid>
     </Grid>

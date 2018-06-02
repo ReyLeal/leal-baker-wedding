@@ -2,6 +2,7 @@ import React from 'react'
 import LandingPage from './LP/LandingPage';
 import Navigation from './Navigation/Navigation';
 import OurStory from './OurStory/OurStory';
+import CountdownContainer from './CountdownContainer/CountdownContainer';
 import {Grid} from 'material-ui';
 import './css/app.css';
 import {connect} from "react-redux";
@@ -13,11 +14,12 @@ let App = ({dispatch}) => {
     handleScroll(dispatch);
 
     return(
-        <Grid style={{height: '200vh'}} container align={'center'} justify={'center'}>
+        <Grid style={{height: '400vh'}} container align={'center'} justify={'center'}>
             <Grid item xs={12}>
                 <Navigation />
                 <LandingPage />
                 <OurStory />
+                <CountdownContainer />
             </Grid>
         </Grid>
     )

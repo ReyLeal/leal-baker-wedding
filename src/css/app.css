@@ -23,7 +23,14 @@ body {
 }
 
 .navBackground {
-    background-color: rgba(0,0,0,0.20)!important;
+    transition-timing-function: linear;
+    -webkit-transition: all 1s;
+}
+
+.navBackgroundTop {
+    transition-timing-function: linear;
+    -webkit-transition: all 1s;
+    background-color: rgba(0,0,0,0.20);
 }
 
 .lpContainer {
@@ -51,7 +58,7 @@ body {
     border: solid 1px rgba(0,0,0,0.3)!important;
     box-shadow: 0 0 4rem -1rem!important;
     margin-top: auto!important;
-    margin-bottom: -2.5rem!important;
+    margin-bottom: .5rem!important;
 }
 
 .countDownTitle {
@@ -69,10 +76,8 @@ body {
 }
 
 .lpCountdown {
-    margin-top: -4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: rgba(0,0,0,0.35);
     align-self: flex-start;
 }
 
@@ -118,6 +123,8 @@ body {
 
 .ourStory {
     height: 40vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -128,6 +135,59 @@ body {
     font-weight: 500!important;
 }
 
+.cdTitle {
+    font-size: 2rem;
+    color: white!important;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
+}
+
 .containerBody {
     color: gray!important;
+}
+
+#CountdownContainer {
+    background:
+            no-repeat
+            linear-gradient(
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)
+            ),
+            center url('../media/lpBackground.jpg');
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+#CountdownContainer {
+    background:
+            no-repeat
+            linear-gradient(
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25)
+            ),
+            center
+            fixed
+            url('../media/lpBackground.jpg');
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    perspective: 2px;
+}
+
+
+
+.timeContainer {
+    width: 50%;
+    margin: 0 auto;
+    border: solid 3px;
+    background-color: rgba(0,0,0,0.35);
+    padding: .5rem;
+}
+
+.timeUnits {
+    font-size: 2rem;
 }

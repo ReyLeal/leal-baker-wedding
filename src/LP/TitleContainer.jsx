@@ -11,7 +11,7 @@ export const TitleContainer = () =>
                     Save The Date
                 </Grid>
                 <Grid className={'titleHeader'} item xs={12}>
-                    Rey & Alexis
+                    Alexis & Rey
                 </Grid>
             </Grid>
         </Grid>

@@ -10,7 +10,7 @@ const handleChange = (value, dispatch) => {
   };
 
 const renderAppBar = (tabIndex, dispatch) =>
-  <AppBar className={"navBar navBackground"} position="fixed">
+  <AppBar className={"navBar navBackground"} style={{backgroundColor: 'rgba(0,0,0,0.20)'}} position="fixed">
     <Toolbar className={"navBar"}>
       {renderTabs(tabIndex, dispatch)}
     </Toolbar>
