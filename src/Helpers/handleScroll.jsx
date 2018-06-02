@@ -12,6 +12,12 @@ export const handleScroll = (dispatch) => {
             document.querySelector('.navBackground').style.backgroundColor = 'rgba(0,0,0,0.85)';
         }
 
+
+        if (scrollPos > (document.querySelector('.Details').offsetTop - 10)) {
+            dispatch(changeTabNoScroll(2));
+            return true;
+        }
+
         if (scrollPos > (document.querySelector('.ourStory').offsetTop - 10)) {
             dispatch(changeTabNoScroll(1));
             return true;

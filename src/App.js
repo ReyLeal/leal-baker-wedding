@@ -3,6 +3,7 @@ import LandingPage from './LP/LandingPage';
 import Navigation from './Navigation/Navigation';
 import OurStory from './OurStory/OurStory';
 import CountdownContainer from './CountdownContainer/CountdownContainer';
+import Details from './Details/Details';
 import {Grid} from 'material-ui';
 import './css/app.css';
 import {connect} from "react-redux";
@@ -20,6 +21,7 @@ let App = ({dispatch}) => {
                 <LandingPage />
                 <OurStory />
                 <CountdownContainer />
+                <Details />
             </Grid>
         </Grid>
     )

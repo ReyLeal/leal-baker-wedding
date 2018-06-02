@@ -9,7 +9,7 @@ let CountDown = () => (
         <Grid className={'cdContainer2'} container justify={'center'} alignItems={'center'}>
             <Grid container justify={'center'} alignItems={'center'}>
                 <Grid className={'cdTitle'} item xs={12}>
-                    <h2> Wait for it... </h2>
+                    <h2 className={'cdHeading'}> Wait for it... </h2>
                 </Grid>
             </Grid>
             <LPCountDown />

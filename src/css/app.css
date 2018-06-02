@@ -48,6 +48,10 @@ body {
 }
 
 .arrowButton {
+    -webkit-transition: all .25s!important;
+    -moz-transition: all .25s!important;
+    -o-transition: all .25s!important;
+    transition: all .25s!important;
     height: 6rem;
     width: 6rem;
     padding: 0!important;
@@ -59,6 +63,10 @@ body {
     box-shadow: 0 0 4rem -1rem!important;
     margin-top: auto!important;
     margin-bottom: .5rem!important;
+}
+
+.arrowButton:hover {
+    padding: 10px!important;
 }
 
 .countDownTitle {
@@ -142,6 +150,12 @@ body {
     font-weight: 500!important;
 }
 
+.cdHeading {
+    width: 25%;
+    border-bottom: solid .75px rgba(255,255,255,0.5);
+    padding-bottom: 1rem;
+}
+
 .containerBody {
     color: gray!important;
 }
@@ -176,11 +190,21 @@ body {
     display: flex;
     align-items: center;
     perspective: 2px;
+    box-shadow: 0 0 4rem -1rem;
 }
 
-
+.containerCaption {
+    margin-top: -1.5rem!important;
+    margin-bottom: 1.35rem!important;
+    font-style: italic;
+    opacity: .4;
+}
 
 .timeContainer {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
     width: 50%;
     margin: 0 auto;
     border: solid 3px;
@@ -188,6 +212,65 @@ body {
     padding: .5rem;
 }
 
+.timeContainer:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
 .timeUnits {
     font-size: 2rem;
+}
+
+.Details {
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.locationCardPaper {
+    margin: 1rem;
+    -webkit-border-radius: 8px!important;
+    -moz-border-radius: 8px!important;
+    border-radius: 8px!important;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.locationCardPaper:hover {
+    margin-top: -2rem;
+}
+
+.locationCardMedia {
+    background-image: url('../media/lpBackground.jpg');
+    height: 15rem;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transition: all .75s;
+    -moz-transition: all .75s;
+    -ms-transition: all .75s;
+    -o-transition: all .75s;
+    transition: all .75s;
+}
+
+.locationCardMedia:hover {
+    filter: opacity(80%);
+}
+
+.locationCardTextContainer {
+    padding: 1rem;
+    height: 7rem;
+}
+
+.locationCardtext {
+    font-size: 1.5rem;
+    color: black!important;
+    font-family: 'Playball', cursive!important;
+    font-weight: 500!important;
+    border-bottom: solid .5px rgba(0,0,0,0.25);
+    padding-bottom: .25rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1rem;
 }

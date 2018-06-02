@@ -24,8 +24,8 @@ const renderTabs = (tabIndex, dispatch) =>
    onChange={(event, value) => handleChange(value, dispatch)}
    >
     {renderTab('Home')}
-    {renderTab('About Us')}
-    {renderTab('Location')}
+    {renderTab('Our Story')}
+    {renderTab('The Deets')}
     {renderTab('Registry')}
     {renderTab('RSVP')}
     {renderTab('Contact Us')}

@@ -14,10 +14,13 @@ function contact(state = defaultStore, action) {
 const tabIndexIDMappig = {
     0 : '#Home',
     1 : '#OurStory',
+    2 : '#Details',
 }
 
 function redirectNavigation(index) {
-    scrollTo(document.querySelector(tabIndexIDMappig[index]), 750);
+    if(tabIndexIDMappig[index]) {
+        scrollTo(document.querySelector(tabIndexIDMappig[index]), 750);
+    }
 }
 
 
