@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Load LandingPage stateless component renders correctly 1`] = `
+<WithStyles(GridWrapper)
+  id="Home"
+>
+  <WithStyles(GridWrapper)
+    alignItems="flex-end"
+    className="lpContainer"
+    container={true}
+    direction="row"
+    justify="center"
+  >
+    <WithStyles(GridWrapper)
+      alignItems="center"
+      className="titleContainer"
+      container={true}
+      direction="row"
+      justify="center"
+    >
+      <Unknown />
+    </WithStyles(GridWrapper)>
+    <WithStyles(GridWrapper)
+      className="CDButtonContainer"
+      item={true}
+      xs={12}
+    >
+      <Connect(NextNavigation) />
+    </WithStyles(GridWrapper)>
+  </WithStyles(GridWrapper)>
+</WithStyles(GridWrapper)>
+`;

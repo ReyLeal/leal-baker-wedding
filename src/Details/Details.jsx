@@ -22,7 +22,7 @@ const cardComponent = (title, type, text) =>
 let Details = () => (
     <Grid id={'Details'}>
         <Grid className={'Details'} container justify={'center'} alignItems={'center'}>
-            <Grid item xs={6}>
+            <Grid item xs={8}>
                 <Typography className={'containerTitle'} variant="display3" gutterBottom>
                     The Deets...
                 </Typography>

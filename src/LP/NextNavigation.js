@@ -16,6 +16,10 @@ let NextNavigation = ({dispatch}) =>
     </Grid>
 
 
-NextNavigation = connect()(NextNavigation);
+NextNavigation = connect((state) => {
+    return {
+        tabIndex : state.tabs.tabIndex
+    }
+})(NextNavigation);
 
 export default NextNavigation
