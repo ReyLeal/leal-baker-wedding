@@ -38,7 +38,7 @@ let Details = () => (
                 <Grid style={{marginTop: '2rem'}} container justify={'center'} alignItems={'center'}>
                     { cardComponent('The Venue', 'locationCard', 'No jeans or cowboy hats please.') }
                     { cardComponent('What To Wear', 'locationCard', 'No jeans or cowboy hats please.') }
-                    { cardComponent('Parking', 'locationCard', 'No jeans or cowboy hats please.') }
+                    { cardComponent('Registry', 'locationCard', 'Click here to view our Registry.') }
                 </Grid>
             </Grid>
         </Grid>

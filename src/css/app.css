@@ -90,7 +90,6 @@ body {
 }
 
 .titleSection {
-    margin-top: 30vh!important;
     border-radius: 50px 50px 0 0;
     text-align: center;
     font-family: 'Playball', cursive!important;
@@ -109,7 +108,7 @@ body {
 .dateSection {
     font-family: 'Bitter', serif!important;
     font-weight: 400!important;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     padding: .5rem;
 }
 
@@ -273,4 +272,18 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 1rem;
+}
+
+.CDButtonContainer {
+    margin-top: -7rem!important;
+}
+
+#RSVP {
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 4rem -1rem;
+    height: 100%;
+}
+
+.RSVPTitle {
+    color: white!important;
 }

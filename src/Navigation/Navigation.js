@@ -26,9 +26,7 @@ const renderTabs = (tabIndex, dispatch) =>
     {renderTab('Home')}
     {renderTab('Our Story')}
     {renderTab('The Deets')}
-    {renderTab('Registry')}
-    {renderTab('RSVP')}
-    {renderTab('Contact Us')}
+    {renderTab('RSVPContainer')}
   </Tabs>;
 
 const renderTab = item =>

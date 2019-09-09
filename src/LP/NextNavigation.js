@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Button} from 'material-ui'
 import arrow from '../media/downArrow.png';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import {changeTab} from '../Actions/Actions';
 
 const handleClick = (dispatch) => {
@@ -9,17 +9,17 @@ const handleClick = (dispatch) => {
 };
 
 let NextNavigation = ({dispatch}) =>
-    <Grid item xs={12}>
-      <Button className={'arrowButton'} onClick={() => handleClick(dispatch)}>
-        <img style={{height: '5rem', width : '5rem'}} src={arrow} alt='' />
-      </Button>
-    </Grid>
+    <Grid  className={'CDButtonContainer'} item xs={12}>
+        <Button className={'arrowButton'} onClick={() => handleClick(dispatch)}>
+            <img style={{height: '5rem', width: '5rem'}} src={arrow} alt=''/>
+        </Button>
+    </Grid>;
 
 
 NextNavigation = connect((state) => {
     return {
-        tabIndex : state.tabs.tabIndex
+        tabIndex: state.tabs.tabIndex
     }
 })(NextNavigation);
 
-export default NextNavigation
+export default NextNavigation;
