@@ -1,18 +1,44 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import {Grid, FormGroup, TextField} from 'material-ui'
+import {connect} from 'react-redux';
+import {Grid, FormGroup, TextField} from 'material-ui';
 
-const whiteText = {color: 'white'};
+class RSVPForm extends React.Component {
+    state = {
+        'First Name': '',
+        'Last Name': '',
+        'Contact Number': '',
+        'Additional Guests': '',
+        'Message': '',
 
-let RSVPContainer = () => (
-    <Grid id={'RSVPContainer'}>
-        <Grid item xs={8}>
+    }
 
-        </Grid>
-    </Grid>
+    field = (name) =>
+        <TextField
+            label={name}
+            value={this.state[name]}
+            InputLabelProps={{
+                style: {color: 'white'}
+            }}
+            onChange={({target: {value}}) => this.setState({ [name] : value })}
+        />;
 
-);
+    render() {
+        return (
+            <Grid id={'RSVPContainer'}>
+                <Grid item xs={8}>
+                    <FormGroup>
+                        {this.field('First Name')}
+                        {this.field('Last Name')}
+                        {this.field('Contact Number')}
+                        {this.field('Additional Guests')}
+                        {this.field('Message')}
+                    </FormGroup>
+                </Grid>
+            </Grid>
+        )
+    }
+}
 
-RSVPContainer = connect()(RSVPContainer);
+RSVPForm = connect()(RSVPForm);
 
-export default RSVPContainer
+export default RSVPForm

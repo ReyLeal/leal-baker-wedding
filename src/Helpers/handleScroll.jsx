@@ -13,6 +13,11 @@ export const handleScroll = (dispatch) => {
         }
 
 
+        if (scrollPos > (document.querySelector('.RSVP').offsetTop - 10)) {
+            dispatch(changeTabNoScroll(3));
+            return true;
+        }
+
         if (scrollPos > (document.querySelector('.Details').offsetTop - 10)) {
             dispatch(changeTabNoScroll(2));
             return true;

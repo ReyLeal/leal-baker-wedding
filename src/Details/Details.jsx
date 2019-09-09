@@ -36,7 +36,7 @@ let Details = () => (
                     Integer pharetra enim massa, eget vehicula leo luctus in.
                 </Typography>
                 <Grid style={{marginTop: '2rem'}} container justify={'center'} alignItems={'center'}>
-                    { cardComponent('The Venue', 'locationCard', 'No jeans or cowboy hats please.') }
+                    { cardComponent('The Venue', 'locationCard', 'Learn more about the Thalatta Estate.') }
                     { cardComponent('What To Wear', 'locationCard', 'No jeans or cowboy hats please.') }
                     { cardComponent('Registry', 'locationCard', 'Click here to view our Registry.') }
                 </Grid>

@@ -15,6 +15,7 @@ const tabIndexIDMappig = {
     0 : '#Home',
     1 : '#OurStory',
     2 : '#Details',
+    3 : '#RSVP',
 }
 
 function redirectNavigation(index) {
