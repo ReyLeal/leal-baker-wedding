@@ -5,6 +5,9 @@ const RSVPCodesSchema = new Schema({
   rsvpCode: String,
   count: Number,
   name: String,
-}, {timestamps: true});
+}, {
+  collection: 'RSVPCodes',
+  timestamps: true
+});
 
 module.exports = mongoose.model('RSVPCodes', RSVPCodesSchema);

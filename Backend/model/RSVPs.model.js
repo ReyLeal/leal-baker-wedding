@@ -8,6 +8,9 @@ const RSVPsSchema = new Schema({
   attending: Boolean,
   guestCount: Number,
   message: String,
-}, {timestamps: true});
+}, {
+  collection: 'rsvps',
+  timestamps: true
+});
 
 module.exports = mongoose.model('RSVPs', RSVPsSchema);

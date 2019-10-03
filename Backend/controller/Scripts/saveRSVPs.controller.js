@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 import RSVPs from '../../model/RSVPs.model'
+import RSVPCodes from '../../model/RSVPCodes.model'
 const getSecret = require('../../secrets.js');
 
 //DATABASE
 const checkDuplicateRSVP = async (rsvpCode) => {
   let valid = true;
+  let message = '';
 
   mongoose.connect(getSecret('dbUri'));
   const db = mongoose.connection;
@@ -15,19 +17,28 @@ const checkDuplicateRSVP = async (rsvpCode) => {
     response.map(rsvp => {
       console.log(rsvp.rsvpCode, rsvpCode);
       if(rsvp.rsvpCode.toString() === rsvpCode.toString()) {
-        valid = false
+        valid = false;
+        message = 'You have already submitted a RSVP'
       }
       return true;
     });
   });
 
-  return {valid};
+  await RSVPCodes.find({rsvpCode}, (err, response) => {
+    if (err) valid = false;
+    if(response.length < 1) {
+      valid = false;
+      message = 'Invalid RSVP Code';
+    }
+  });
+
+  return {valid, message};
 };
 
 const saveRSVP = async ({firstName, lastName, message, wholeParty, rsvpCode, guestCount}) => {
   const dupeCheck = await checkDuplicateRSVP(rsvpCode);
   if(dupeCheck.valid === false) {
-    return {success: false, message: 'You have already submitted a RSVP'}
+    return {success: false, message: dupeCheck.message}
   }
 
 

@@ -46,7 +46,7 @@ router.post('/getGuestCount', async (req, res) => {
   getCount(rsvpCode)
     .then((count) => {
       console.log(count);
-      return res.json({success: true, data: count})
+      return res.json({success: true, maxGuests: count})
     })
     .catch(err =>  res.json({success: false, error: err}));
 });

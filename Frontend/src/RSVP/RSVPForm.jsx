@@ -85,7 +85,7 @@ class RSVPForm extends React.Component {
           this.enableSubmit()
         })
         .catch(error => {
-          this.enableSubmit();
+          this.setState({submitting: false});
           console.error(error)
         })
     );
