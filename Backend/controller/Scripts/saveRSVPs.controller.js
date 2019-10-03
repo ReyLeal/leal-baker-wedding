@@ -3,17 +3,18 @@ import RSVPs from '../../model/RSVPs.model'
 const getSecret = require('../../secrets.js');
 
 //DATABASE
-mongoose.connect(getSecret('dbUri'));
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-
-const checkDuplicateRSVP = async (firstName, lastName) => {
+const checkDuplicateRSVP = async (rsvpCode) => {
   let valid = true;
 
-  await RSVPs.find({firstName, lastName}, (err, response) => {
-    if (err) return {valid: false};
+  mongoose.connect(getSecret('dbUri'));
+  const db = mongoose.connection;
+  db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+  await RSVPs.find({rsvpCode}, (err, response) => {
+    if (err) valid = false;
     response.map(rsvp => {
-      if(rsvp.firstName === firstName && rsvp.lastName === lastName) {
+      console.log(rsvp.rsvpCode, rsvpCode);
+      if(rsvp.rsvpCode.toString() === rsvpCode.toString()) {
         valid = false
       }
       return true;
@@ -23,18 +24,25 @@ const checkDuplicateRSVP = async (firstName, lastName) => {
   return {valid};
 };
 
-const saveRSVP = async ({firstName, lastName, message, wholeParty}) => {
-  const dupeCheck = await checkDuplicateRSVP(firstName, lastName);
-
+const saveRSVP = async ({firstName, lastName, message, wholeParty, rsvpCode, guestCount}) => {
+  const dupeCheck = await checkDuplicateRSVP(rsvpCode);
   if(dupeCheck.valid === false) {
     return {success: false, message: 'You have already submitted a RSVP'}
   }
+
+
+  mongoose.connect(getSecret('dbUri'));
+  const db = mongoose.connection;
+  db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
   const rsvpModel = new RSVPs();
 
   rsvpModel.firstName = firstName;
   rsvpModel.lastName = lastName;
   rsvpModel.message = message;
   rsvpModel.wholeParty = wholeParty;
+  rsvpModel.rsvpCode = rsvpCode;
+  rsvpModel.guestCount = guestCount;
 
   await rsvpModel.save(err => {
     if (err) console.log('Database Error: ', err);

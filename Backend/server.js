@@ -2,6 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import getSecret from './secrets';
 import saveRSVPs from "./controller/Scripts/saveRSVPs.controller";
+import getCount from "./controller/Scripts/getRSVPs.controller";
 import logger from 'morgan';
 import mongoose from 'mongoose';
 
@@ -12,7 +13,6 @@ const API_PORT = 3001;
 
 mongoose.connect(getSecret('dbUri'), { useNewUrlParser: true } );
 var db = mongoose.connection;
-
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use(function (req, res, next) {
@@ -36,6 +36,17 @@ router.post('/saveRSVP', (req, res) => {
   saveRSVPs(params)
     .then(({success, message}) => {
       return res.json({success, message})
+    })
+    .catch(err =>  res.json({success: false, error: err}));
+});
+
+
+router.post('/getGuestCount', async (req, res) => {
+  const {rsvpCode} = {...req.body};
+  getCount(rsvpCode)
+    .then((count) => {
+      console.log(count);
+      return res.json({success: true, data: count})
     })
     .catch(err =>  res.json({success: false, error: err}));
 });

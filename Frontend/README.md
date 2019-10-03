@@ -294,7 +294,7 @@ Having problems with VS Code Debugging? Please see their [troubleshooting guide]
 
 You would need to have [WebStorm](https://www.jetbrains.com/webstorm/) and [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) Chrome extension installed.
 
-In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and select `JavaScript Debug`. Paste `http://localhost:3000` into the URL field and save the configuration.
+In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and select `JavaScript Debug`. Paste `http://localhost:3000` into the URL textField and save the configuration.
 
 >Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
 
@@ -333,7 +333,7 @@ Add the following line to `scripts` section:
     "build": "react-scripts build",
 ```
 
-Next we add a 'lint-staged' field to the `package.json`, for example:
+Next we add a 'lint-staged' textField to the `package.json`, for example:
 
 ```diff
   "dependencies": {
@@ -1056,7 +1056,7 @@ For example, a production setup might look like this after the app is deployed:
 
 Such setup is **not** required. However, if you **do** have a setup like this, it is convenient to write requests like `fetch('/api/todos')` without worrying about redirecting them to another host or port during development.
 
-To tell the development server to proxy any unknown requests to your API server in development, add a `proxy` field to your `package.json`, for example:
+To tell the development server to proxy any unknown requests to your API server in development, add a `proxy` textField to your `package.json`, for example:
 
 ```js
   "proxy": "http://localhost:4000",
@@ -1879,7 +1879,7 @@ When a user adds a web app to their homescreen using Chrome or Firefox on
 Android, the metadata in [`manifest.json`](public/manifest.json) determines what
 icons, names, and branding colors to use when the web app is displayed.
 [The Web App Manifest guide](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)
-provides more context about what each field means, and how your customizations
+provides more context about what each textField means, and how your customizations
 will affect your users' experience.
 
 ## Analyzing the Bundle Size
@@ -2130,7 +2130,7 @@ For more information see [Add Firebase to your JavaScript Project](https://fireb
 **The step below is important!**<br>
 **If you skip it, your app will not deploy correctly.**
 
-Open your `package.json` and add a `homepage` field for your project:
+Open your `package.json` and add a `homepage` textField for your project:
 
 ```json
   "homepage": "https://myusername.github.io/my-app",
@@ -2142,7 +2142,7 @@ or for a GitHub user page:
   "homepage": "https://myusername.github.io",
 ```
 
-Create React App uses the `homepage` field to determine the root URL in the built HTML file.
+Create React App uses the `homepage` textField to determine the root URL in the built HTML file.
 
 #### Step 2: Install `gh-pages` and add `deploy` to `scripts` in `package.json`
 
@@ -2427,7 +2427,7 @@ Some third-party packages don't compile their code to ES5 before publishing to n
 To resolve this:
 
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
-  * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
+  * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` textField in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
 2. Fork the package and publish a corrected version yourself. 
 
