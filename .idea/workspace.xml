@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="changes made to update different pieces of the site.">
-      <change afterPath="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/model/RSVPs.model.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Backend/secrets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enzymeSteup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/enzymeSteup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/rings.png" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/public/rings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actions/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Actions/Actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountdownContainer/CountdownContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/CountdownContainer/CountdownContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Details/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Details/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/ScrollTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Helpers/ScrollTo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/handleScroll.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Helpers/handleScroll.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LP/LPCountDown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/LPCountDown.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LP/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LP/NextNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/NextNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LP/TitleContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/TitleContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LP/__tests__/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/__tests__/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LP/__tests__/__snapshots__/LandingPage.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/__tests__/__snapshots__/LandingPage.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OurStory/OurStory.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/OurStory/OurStory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RSVP/RSVPContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reducers/Reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Reducers/Reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/BPattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/media/BPattern.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/downArrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/media/downArrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/lpBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/media/lpBackground.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/test.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingRedux/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/testingRedux/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingRedux/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/testingRedux/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingRedux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/testingRedux/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingRedux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/testingRedux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingRedux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/testingRedux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingRedux/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/testingRedux/registerServiceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/Backend/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="780">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -84,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="221">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -96,17 +53,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Backend/model/RSVPs.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="234">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Backend/secrets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="104">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -125,6 +82,7 @@
       <find>db</find>
       <find>err</find>
       <find>router.post</find>
+      <find>saveRSVP</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,19 +106,17 @@
         <option value="$PROJECT_DIR$/Backend/controller/Scripts/startScript.js" />
         <option value="$PROJECT_DIR$/Backend/model/RSVPs.model.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Backend/secrets.js" />
         <option value="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" />
-        <option value="$PROJECT_DIR$/Backend/server.js" />
-        <option value="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/Backend/server.js" />
+        <option value="$PROJECT_DIR$/Backend/secrets.js" />
+        <option value="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1280" />
-    <option name="y" value="-386" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -174,6 +130,24 @@
             <path>
               <item name="leal-baker-wedding" type="b2602c69:ProjectViewProjectNode" />
               <item name="leal-baker-wedding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leal-baker-wedding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leal-baker-wedding" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leal-baker-wedding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leal-baker-wedding" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leal-baker-wedding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leal-baker-wedding" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -238,7 +212,8 @@
       <workItem from="1567994784999" duration="7294000" />
       <workItem from="1568154960034" duration="438000" />
       <workItem from="1568672829032" duration="4968000" />
-      <workItem from="1569968111840" duration="101000" />
+      <workItem from="1569968111840" duration="2372000" />
+      <workItem from="1570060762663" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -303,17 +278,24 @@
       <option name="project" value="LOCAL" />
       <updated>1567999612934</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changes made to update different pieces of the site.">
+      <created>1569968362618</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569968362618</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9667000" />
+    <option name="totallyTimeSpent" value="12720000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-386" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6816952" visible="true" weight="0.10405084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6816952" visible="true" weight="0.21486267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.31830478" side_tool="true" weight="0.1517572" />
       <window_info id="Favorites" order="3" sideWeight="0.5049594" side_tool="true" weight="0.14376996" />
@@ -326,7 +308,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912534" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.16026588" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30392158" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32912534" />
       <window_info anchor="bottom" id="RNConsole" order="12" />
@@ -611,17 +593,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/secrets.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="442">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -638,24 +620,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/secrets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/model/RSVPs.model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="234">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="221">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
