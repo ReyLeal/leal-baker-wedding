@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
 import RSVPs from '../../model/RSVPs.model'
 import RSVPCodes from '../../model/RSVPCodes.model'
+const mongoose = require('mongoose');
 const getSecret = require('../../secrets.js');
 
 //DATABASE

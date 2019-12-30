@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +30,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/usr/bin/git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Frontend/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,13 +42,16 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Frontend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Frontend/src" />
+      <recent name="$PROJECT_DIR$/Frontend" />
       <recent name="$PROJECT_DIR$/Backend/controller/Scripts" />
       <recent name="$PROJECT_DIR$/Backend/model" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Frontend/src" />
+      <recent name="$PROJECT_DIR$/Frontend" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +112,7 @@
       <workItem from="1570216603539" duration="461000" />
       <workItem from="1571496605594" duration="228000" />
       <workItem from="1571663485839" duration="1679000" />
-      <workItem from="1577672590062" duration="9568000" />
+      <workItem from="1577672590062" duration="10895000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -272,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577685024633</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="working on better validation for max guest count">
+      <created>1577685143874</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1577685143874</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
