@@ -82,7 +82,7 @@ class RSVPForm extends React.Component {
     }
 
     this.setState({submitting: true}, () =>
-      axios.post(`http://localhost:3001/api/saveRSVP`, this.state)
+      axios.post(`/api/saveRSVP`, this.state)
         .then(({data: {success, message}}) => {
           if (success) {
             this.setValidation('Success', message || 'Your RSVP has been recorded.')
