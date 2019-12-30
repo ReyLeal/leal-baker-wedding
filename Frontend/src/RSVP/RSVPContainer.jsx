@@ -7,7 +7,7 @@ const whiteText = {color: 'white'};
 
 let RSVPContainer = () => (
     <Grid id={'RSVP'} >
-        <Grid className={'RSVP'} item xs={8}>
+        <Grid className={'RSVP'} item xs={11} sm={8}>
             <Typography style={whiteText} className={'containerTitle RSVPTitle'}  variant="display3" gutterBottom>
                 RSVP
             </Typography>

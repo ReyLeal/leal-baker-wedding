@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from 'material-ui'
 
 export const TitleContainer = () =>
-        <Grid className={'titleSection'}  item xs={3}>
+        <Grid className={'titleSection'}  item xs={10} sm={6} md={3}>
             <Grid container justify={'center'} alignItems={'center'}>
                 <Grid className={'dateSection'} item xs={12}>
                     March 14th, 2020

@@ -21,9 +21,14 @@ const styles = () => ({
     maxWidth: '90vw',
     color: 'white!important',
     '& < svg': {
-      color: 'white!important'
+      color: 'white!important',
+      fill: 'white!important'
     }
   },
+  icon: {
+    color: 'white!important',
+    fill: 'white!important'
+  }
 });
 
 const missingMembersText = (number) => number === 0 ?
@@ -39,9 +44,11 @@ class RSVPForm extends React.Component {
     attending: true,
     guestCount: 0,
     message: '',
+    rsvpError: '',
     validationMessage: '',
     validationTitle: '',
     submitting: false,
+    hideRSVP: false,
     maxGuests: 0,
   };
 
@@ -97,7 +104,8 @@ class RSVPForm extends React.Component {
     this.setState({rsvpCode}, () => {
       axios.post(`http://localhost:3001/api/getGuestCount`, {rsvpCode})
         .then(({data: {success, maxGuests}}) => {
-          if (success) this.setState({maxGuests});
+          if (success && maxGuests > 0) this.setState({maxGuests, rsvpError: '', hideRSVP: true});
+          else if (this.state.maxGuests === 0) this.setState({rsvpError: 'We were unable to validate your RSVP code. Please check your code and try again.'})
         })
         .catch(error => console.error(error))
     });
@@ -118,6 +126,7 @@ class RSVPForm extends React.Component {
       className={this.props.classes.textFieldStyle}
       label={name}
       value={this.state[state]}
+      helperText={this.state.rsvpError}
       InputLabelProps={{
         style: {color: 'white'}
       }}
@@ -149,6 +158,11 @@ class RSVPForm extends React.Component {
       value={this.state.guestCount}
       InputLabelProps={{
         style: {color: 'white'}
+      }}
+      InputProps={{
+        classes: {
+          icon: this.props.classes.icon,
+        }
       }}
       select
       onChange={({target: {value}}) => this.setState({guestCount: value})}
@@ -195,12 +209,12 @@ class RSVPForm extends React.Component {
   );
 
   render() {
-    const {validationTitle, validationMessage} = this.state;
+    const {validationTitle, validationMessage, hideRSVP} = this.state;
     return (
       <Grid id={'RSVPContainer'}>
-        <Grid item xs={8}>
+        <Grid item xs={12} sm={8}>
           <FormGroup>
-            {this.rsvpField('rsvpCode', 'RSVP Code')}
+            {!hideRSVP && this.rsvpField('rsvpCode', 'RSVP Code (check your invitation)')}
             {this.renderRSVP()}
           </FormGroup>
         </Grid>

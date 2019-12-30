@@ -22,7 +22,7 @@ const cardComponent = (title, type, text) =>
 let Details = () => (
     <Grid id={'Details'}>
         <Grid className={'Details'} container justify={'center'} alignItems={'center'}>
-            <Grid item xs={8}>
+            <Grid item xs={10} sm={8}>
                 <Typography className={'containerTitle'} variant="display3" gutterBottom>
                     The Deets...
                 </Typography>
@@ -32,12 +32,11 @@ let Details = () => (
                 </Typography>
                 <Divider style={{marginBottom: '2rem', width: '50%'}} />
                 <Typography className={'containerBody'} variant="title" gutterBottom>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum neque ac sodales pulvinar.
-                    Integer pharetra enim massa, eget vehicula leo luctus in.
+                    Check out wedding details in these sections below. Oh, and don't forget to scroll down some more to RSVP!
                 </Typography>
                 <Grid style={{marginTop: '2rem'}} container justify={'center'} alignItems={'center'}>
                     { cardComponent('The Venue', 'locationCard', 'Learn more about the Thalatta Estate.') }
-                    { cardComponent('What To Wear', 'locationCard', 'No jeans or cowboy hats please.') }
+                    { cardComponent('What To Wear', 'locationCard', 'Click to get some insight on what to wear.') }
                     { cardComponent('Registry', 'locationCard', 'Click here to view our Registry.') }
                 </Grid>
             </Grid>

@@ -14,6 +14,20 @@ import {handleScroll} from "./Helpers/handleScroll.jsx";
 
 const theme = createMuiTheme({
     overrides: {
+        palette: {
+            primary: '#fff',
+            secondary: 'rgba(9,9,9,0.54)',
+        },
+        MuiSelect: {
+          icon: {
+              color: 'white',
+          }
+        },
+        MuiFormHelperText: {
+            root: {
+                color: 'white',
+            }
+        },
         MuiInput: {
             root: {
                 color: 'white'
@@ -27,6 +41,9 @@ const theme = createMuiTheme({
                 },
                 '&:hover:not($disabled):before': { //underline color when hovered
                     backgroundColor: 'white',
+                },
+                '&:after': { //underline color when textfield is inactive
+                    backgroundColor: 'gray',
                 },
             },
 

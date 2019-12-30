@@ -1,13 +1,13 @@
 {
-  "name": "main.gg",
+  "name": "bakerlealwedding",
   "version": "1.0.0",
-  "description": "League Of Legends Champion & Summoner Stats",
+  "description": "Baker Leal Wedding",
   "main": "index.js",
   "scripts": {
     "test": "test",
     "server": "cd Backend && nodemon server.js --exec babel-node --presets env,stage-0",
     "client": "cd Frontend && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Rey Leal",
   "license": "ISC",
@@ -24,5 +24,8 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.18.6",
     "whatwg-fetch": "^3.0.0"
+  },
+  "engines": {
+    "node": "12.1.0"
   }
 }
