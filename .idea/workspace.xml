@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/secrets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/secrets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Details/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/Details/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/LPCountDown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/LPCountDown.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/TitleContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/LP/TitleContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/OurStory/OurStory.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/OurStory/OurStory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +107,7 @@
       <workItem from="1570216603539" duration="461000" />
       <workItem from="1571496605594" duration="228000" />
       <workItem from="1571663485839" duration="1679000" />
-      <workItem from="1577672590062" duration="6033000" />
+      <workItem from="1577672590062" duration="6148000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -211,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570107842097</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="working on better validation for max guest count">
+      <created>1577680614513</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577680614513</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
