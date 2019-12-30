@@ -102,7 +102,7 @@ class RSVPForm extends React.Component {
 
   handleRSVPChange = (rsvpCode) =>
     this.setState({rsvpCode}, () => {
-      axios.post(`http://localhost:3001/api/getGuestCount`, {rsvpCode})
+      axios.post(`/api/getGuestCount`, {rsvpCode})
         .then(({data: {success, maxGuests}}) => {
           if (success && maxGuests > 0) this.setState({maxGuests, rsvpError: '', hideRSVP: true});
           else if (this.state.maxGuests === 0) this.setState({rsvpError: 'We were unable to validate your RSVP code. Please check your code and try again.'})
