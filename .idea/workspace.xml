@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +105,7 @@
       <workItem from="1570216603539" duration="461000" />
       <workItem from="1571496605594" duration="228000" />
       <workItem from="1571663485839" duration="1679000" />
-      <workItem from="1577672590062" duration="9149000" />
+      <workItem from="1577672590062" duration="9452000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -257,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577684326050</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="working on better validation for max guest count">
+      <created>1577684625038</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1577684625038</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

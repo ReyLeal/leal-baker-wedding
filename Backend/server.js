@@ -9,7 +9,7 @@ import mongoose from 'mongoose';
 const app = express();
 const router = express.Router();
 
-const API_PORT = 80;
+const API_PORT = 8080;
 
 mongoose.connect(getSecret('dbUri'), { useNewUrlParser: true } );
 var db = mongoose.connection;
