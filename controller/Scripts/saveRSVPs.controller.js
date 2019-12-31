@@ -1,5 +1,5 @@
-import RSVPs from '../../model/RSVPs.model'
-import RSVPCodes from '../../model/RSVPCodes.model'
+const RSVPs = require('../../model/RSVPs.model')
+const RSVPCodes = require('../../model/RSVPCodes.model')
 const mongoose = require('mongoose');
 const getSecret = require('../../secrets.js');
 

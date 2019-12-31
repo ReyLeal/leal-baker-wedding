@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
-import RSVPCodes from '../../model/RSVPCodes.model'
+const RSVPCodes = require('../../model/RSVPCodes.model');
 const getSecret = require('../../secrets.js');
 
 mongoose.connect(getSecret('dbUri'));
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-export default async function getCount (rsvpCode){
+async function getCount (rsvpCode){
   let count = 0;
 
   await RSVPCodes.find({rsvpCode}, (err, response) => {
@@ -17,3 +17,5 @@ export default async function getCount (rsvpCode){
 
   return count;
 };
+
+module.exports = getCount;

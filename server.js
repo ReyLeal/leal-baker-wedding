@@ -1,15 +1,16 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import getSecret from './secrets';
-import saveRSVPs from "./controller/Scripts/saveRSVPs.controller";
-import getCount from "./controller/Scripts/getRSVPs.controller";
-import logger from 'morgan';
-import mongoose from 'mongoose';
+const express = require('express');
+const bodyParser = require('body-parser');
+const getSecret = require('./secrets');
+const saveRSVPs = require("./controller/Scripts/saveRSVPs.controller");
+const getCount = require("./controller/Scripts/getRSVPs.controller");
+const logger = require('morgan');
+const mongoose = require('mongoose');
+const path = require("path");
 
 const app = express();
 const router = express.Router();
 
-const API_PORT = process.env.PORT || 80;
+const API_PORT = process.env.PORT || 8000;
 
 mongoose.connect(getSecret('dbUri'), { useNewUrlParser: true } );
 var db = mongoose.connection;
@@ -57,5 +58,11 @@ app.on('listening',function(){
 });
 
 app.use('/api', router);
+
+app.use(express.static(path.join(__dirname, "client", "build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(API_PORT, () => console.log(`listening on port: ${API_PORT}`));
