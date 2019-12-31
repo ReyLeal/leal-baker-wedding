@@ -2,55 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/controller/Scripts/getRSVPs.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Scripts/getRSVPs.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/controller/Scripts/saveRSVPs.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Scripts/saveRSVPs.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/model/RSVPCodes.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/RSVPCodes.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/model/RSVPs.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/RSVPs.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/secrets.js" beforeDir="false" afterPath="$PROJECT_DIR$/secrets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/enzymeSteup.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/enzymeSteup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/public/rings.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/rings.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Actions/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Actions/Actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/CountdownContainer/CountdownContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CountdownContainer/CountdownContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Details/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Details/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Helpers/ScrollTo.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Helpers/ScrollTo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Helpers/handleScroll.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Helpers/handleScroll.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/LPCountDown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/LPCountDown.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/NextNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/NextNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/TitleContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/TitleContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/__tests__/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/__tests__/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/LP/__tests__/__snapshots__/LandingPage.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/__tests__/__snapshots__/LandingPage.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/OurStory/OurStory.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OurStory/OurStory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/RSVPContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/RSVPForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/RSVP/ValidationDialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/ValidationDialog.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/Reducers/Reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Reducers/Reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/media/BPattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/media/BPattern.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/media/downArrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/media/downArrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/media/lpBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/media/lpBackground.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/test.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/test.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/testingRedux/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/testingRedux/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/testingRedux/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/testingRedux/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/testingRedux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/testingRedux/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/testingRedux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/testingRedux/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/testingRedux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/testingRedux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/testingRedux/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/testingRedux/registerServiceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +113,7 @@
       <workItem from="1571496605594" duration="228000" />
       <workItem from="1571663485839" duration="1679000" />
       <workItem from="1577672590062" duration="11689000" />
-      <workItem from="1577820224108" duration="1418000" />
+      <workItem from="1577820224108" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -344,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577687209691</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="working on better validation for max guest count">
+      <created>1577821923579</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1577821923580</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
