@@ -37,13 +37,13 @@ const theme = createMuiTheme({
             },
             underline: {
                 '&:before': { //underline color when textfield is inactive
-                    backgroundColor: 'white',
+                    borderBottomColor: 'white!important',
                 },
                 '&:hover:not($disabled):before': { //underline color when hovered
-                    backgroundColor: 'white',
+                    borderBottomColor: 'white!important',
                 },
                 '&:after': { //underline color when textfield is inactive
-                    backgroundColor: 'gray',
+                    borderBottomColor: 'gray!important',
                 },
             },
 

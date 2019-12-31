@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/CountdownContainer/CountdownContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CountdownContainer/CountdownContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Details/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Details/Details.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/LP/LPCountDown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/LPCountDown.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/LP/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/LP/NextNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/NextNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/LP/TitleContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/TitleContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/OurStory/OurStory.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OurStory/OurStory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/RSVP/RSVPContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/RSVPContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/RSVPForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/RSVP/ValidationDialog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/ValidationDialog.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +114,7 @@
       <workItem from="1571496605594" duration="228000" />
       <workItem from="1571663485839" duration="1679000" />
       <workItem from="1577672590062" duration="11689000" />
-      <workItem from="1577820224108" duration="4659000" />
+      <workItem from="1577820224108" duration="5373000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -351,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577824156250</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="working on better validation for max guest count">
+      <created>1577825576368</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1577825576368</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

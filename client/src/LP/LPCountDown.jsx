@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Grid} from '@material-ui/core'
 import moment from 'moment';
 
-const WEDDING_DATE = '3/14/2020 00:00:00';
+const WEDDING_DATE = '03/14/2020 00:00:00';
 const SINGULAR_TIME = {
     years : 'year',
     months : 'month',
