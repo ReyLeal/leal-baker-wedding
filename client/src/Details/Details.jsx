@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Grid, Typography, Divider, Paper} from 'material-ui'
+import {Grid, Typography, Divider, Paper} from '@material-ui/core'
 
 const cardComponent = (title, type, text) =>
     <Grid className={`${type}Container`} item xs={12} sm={4}>

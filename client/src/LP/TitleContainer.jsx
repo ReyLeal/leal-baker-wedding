@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from 'material-ui'
+import { Grid } from '@material-ui/core'
 
 export const TitleContainer = () =>
         <Grid className={'titleSection'}  item xs={10} sm={6} md={3}>

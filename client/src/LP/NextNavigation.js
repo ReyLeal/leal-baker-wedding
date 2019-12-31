@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Button} from 'material-ui'
+import {Grid, Button} from '@material-ui/core'
 import arrow from '../media/downArrow.png';
 import {connect} from 'react-redux';
 import {changeTab} from '../Actions/Actions';

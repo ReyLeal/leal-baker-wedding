@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Grid, FormGroup, TextField, Button, withStyles} from 'material-ui';
+import {Grid, FormGroup, TextField, Button, withStyles} from '@material-ui/core';
 import axios from 'axios';
 import ValidationDialog from "./ValidationDialog";
 

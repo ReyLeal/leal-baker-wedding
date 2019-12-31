@@ -1,8 +1,5 @@
 import React from 'react';
-import {Dialog, Button} from 'material-ui';
-import DialogActions from "material-ui/es/Dialog/DialogActions";
-import DialogTitle from "material-ui/Dialog/DialogTitle";
-import DialogContent from "material-ui/es/Dialog/DialogContent";
+import {Dialog, DialogActions, DialogTitle, DialogContent, Button} from '@material-ui/core';
 
 export default function ValidationDialog(props) {
   return (

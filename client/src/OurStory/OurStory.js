@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Grid, Typography, Divider} from 'material-ui'
+import {Grid, Typography, Divider} from '@material-ui/core'
 
 let OurStory = () => (
     <Grid id={'OurStory'}>

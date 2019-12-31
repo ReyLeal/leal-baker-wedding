@@ -1,5 +1,5 @@
 import React from 'react'
-import {createMuiTheme, MuiThemeProvider} from 'material-ui'
+import {createMuiTheme, MuiThemeProvider} from '@material-ui/core'
 import LandingPage from './LP/LandingPage';
 import NextNavigation from './LP/NextNavigation'
 import Navigation from './Navigation/Navigation';
@@ -7,7 +7,7 @@ import OurStory from './OurStory/OurStory';
 import CountdownContainer from './CountdownContainer/CountdownContainer';
 import Details from './Details/Details';
 import RSVPContainer from './RSVP/RSVPContainer';
-import {Grid} from 'material-ui';
+import {Grid} from '@material-ui/core';
 import './css/app.css';
 import {connect} from "react-redux";
 import {handleScroll} from "./Helpers/handleScroll.jsx";

@@ -1,7 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Grid, AppBar, Toolbar} from 'material-ui';
-import Tabs, { Tab } from 'material-ui/Tabs';
+import {Grid, AppBar, Toolbar, Tabs, Tab} from '@material-ui/core';
 import {changeTab} from '../Actions/Actions';
 
 
