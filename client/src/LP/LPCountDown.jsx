@@ -50,11 +50,8 @@ export default class CountDown extends Component {
         let today = moment();
         let time = moment();
         switch(unit) {
-            case 'months' :
-                time = time.endOf('year').diff(today, 'months') + 3;
-                break;
             case 'days' :
-                time = time.endOf('month').diff(today, 'days');
+                time = moment(this.date).diff(today, 'days');
                 break;
             case 'hours' :
                 time = time.add(1, 'd').startOf('day').diff(today, 'hours');
@@ -92,7 +89,6 @@ export default class CountDown extends Component {
         return (
             <Grid className={'lpCountdown'} container justify={'center'} align={'center'}>
                 <Grid container justify={'center'} align={'center'}>
-                    {this.countDownTime('months')}
                     {this.countDownTime('days')}
                     {this.countDownTime('hours')}
                     {this.countDownTime('minutes')}
