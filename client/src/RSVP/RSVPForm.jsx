@@ -55,12 +55,17 @@ class RSVPForm extends React.Component {
   isFormValid = () => {
     let message = '';
 
-    [
+    const fields = [
       {stateName: 'rsvpCode', title: 'RSVP Code'},
       {stateName: 'firstName', title: 'First Name'},
       {stateName: 'lastName', title: 'Last Name'},
-      {stateName: 'guestCount', title: 'Guest Count'}
-    ].map(({stateName, title}) => {
+    ];
+
+    if (!!this.state.attending) {
+      fields.push({stateName: 'guestCount', title: 'Total Guests Attending'});
+    }
+
+    fields.map(({stateName, title}) => {
       if (!this.state[stateName]) {
         message = message ? `${message}, ${title}` : `Please submit a valid value for: ${title}`
       }
@@ -137,12 +142,12 @@ class RSVPForm extends React.Component {
     <TextField
       className={this.props.classes.textFieldStyle}
       label={'Attending'}
-      value={this.state.wholeParty}
+      value={this.state.attending}
       InputLabelProps={{
         style: {color: 'white'}
       }}
       select
-      onChange={({target: {value}}) => this.setState({wholeParty: value})}
+      onChange={({target: {value}}) => this.setState({attending: value === 'true'})}
       SelectProps={{native: true}}
       margin="normal"
     >

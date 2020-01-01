@@ -35,7 +35,7 @@ const checkDuplicateRSVP = async (rsvpCode) => {
   return {valid, message};
 };
 
-const saveRSVP = async ({firstName, lastName, message, wholeParty, rsvpCode, guestCount}) => {
+const saveRSVP = async ({firstName, lastName, message, attending, rsvpCode, guestCount}) => {
   const dupeCheck = await checkDuplicateRSVP(rsvpCode);
   if(dupeCheck.valid === false) {
     return {success: false, message: dupeCheck.message}
@@ -51,7 +51,7 @@ const saveRSVP = async ({firstName, lastName, message, wholeParty, rsvpCode, gue
   rsvpModel.firstName = firstName;
   rsvpModel.lastName = lastName;
   rsvpModel.message = message;
-  rsvpModel.wholeParty = wholeParty;
+  rsvpModel.attending = attending;
   rsvpModel.rsvpCode = rsvpCode;
   rsvpModel.guestCount = guestCount;
 
@@ -60,7 +60,7 @@ const saveRSVP = async ({firstName, lastName, message, wholeParty, rsvpCode, gue
     else console.log(`Success: { ${firstName} : ${lastName} }`);
   });
 
-  return {success: true, message: `Thank you! Looking forward to see you there, ${firstName}!`}
+  return {success: true, message: !!attending ? `Thank you! Looking forward to seeing you there, ${firstName}!` : 'Your RSVP has been recorded'}
 };
 
 module.exports = saveRSVP;
