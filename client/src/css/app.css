@@ -235,8 +235,13 @@ body {
 .wearCardMedia {
     background-image: url('../media/whatToWear.jpeg');
 }
+
 .registryCardMedia {
     background-image: url('../media/registryPhoto.jpeg');
+}
+
+.honeymoonCardMedia {
+    background-image: url('../media/japan.jpg');
 }
 
 .cardMedia {
@@ -331,5 +336,9 @@ body {
     .timeContainer {
         width: 75%;
         margin-bottom: 1rem;
+    }
+
+    .cardPaper:hover {
+        margin-top: 0;
     }
 }

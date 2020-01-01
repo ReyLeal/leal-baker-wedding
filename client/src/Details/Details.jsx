@@ -14,8 +14,12 @@ const linkToRegistry = () => {
     window.open('https://www.target.com/gift-registry/giftgiver?registryId=9fea7c7efd174554a75b01cbe06ddecb&type=WEDDING', '_blank');
 };
 
+const linkToHoneymoon = () => {
+    window.open('https://www.honeyfund.com/wedding/Alexis-Rey2020', '_blank');
+};
+
 const cardComponent = (title, type, text, onClick = () => {}) =>
-    <Grid className={`cardContainer ${type}Container`} item xs={12} sm={4}>
+    <Grid className={`cardContainer ${type}Container`} item xs={12} sm={3}>
         <Paper className={`cardPaper ${type}Paper`} onClick={onClick}>
             <Grid container alignItems={'center'} justyfy={'center'}>
                 <Grid item xs={12} className={`cardMedia ${type}Media`}> </Grid>
@@ -34,7 +38,7 @@ const cardComponent = (title, type, text, onClick = () => {}) =>
 let Details = () => (
     <Grid id={'Details'}>
         <Grid className={'Details'} container justify={'center'} alignItems={'center'}>
-            <Grid item xs={10} sm={8}>
+            <Grid item xs={10} sm={10}>
                 <Typography className={'containerTitle'} variant="display3" gutterBottom>
                     The Deets...
                 </Typography>
@@ -49,7 +53,8 @@ let Details = () => (
                 <Grid style={{marginTop: '2rem'}} container justify={'center'} alignItems={'center'}>
                     { cardComponent('The Venue', 'locationCard', 'Learn more about the Thalatta Estate.' ,() => linkToEstateWebsite()) }
                     { cardComponent('What To Wear', 'wearCard', 'Click to get some insight on what to wear.', () => linkToAttireWebsite()) }
-                    { cardComponent('Registry', 'registryCard', 'Click here to view our Registry.', () => linkToRegistry()) }
+                    { cardComponent('Gift Registry', 'registryCard', 'Click here to view our Gift Registry.', () => linkToRegistry()) }
+                    { cardComponent('Honeymoon Fund', 'honeymoonCard', 'Click here to donate to our honeymoon.', () => linkToHoneymoon()) }
                 </Grid>
             </Grid>
         </Grid>
