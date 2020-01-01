@@ -183,7 +183,7 @@ class RSVPForm extends React.Component {
   messageArea = () =>
     <TextField
       className={this.props.classes.textFieldStyle}
-      label={'Message'}
+      label={'Message (optional)'}
       value={this.state.message}
       multiline
       rowsMax={4}

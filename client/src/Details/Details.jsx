@@ -19,7 +19,7 @@ const linkToHoneymoon = () => {
 };
 
 const cardComponent = (title, type, text, onClick = () => {}) =>
-    <Grid className={`cardContainer ${type}Container`} item xs={12} sm={3}>
+    <Grid className={`cardContainer ${type}Container`} item xs={12} sm={6} md={3}>
         <Paper className={`cardPaper ${type}Paper`} onClick={onClick}>
             <Grid container alignItems={'center'} justyfy={'center'}>
                 <Grid item xs={12} className={`cardMedia ${type}Media`}> </Grid>
