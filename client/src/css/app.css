@@ -316,6 +316,14 @@ body {
     }
 
     #CountdownContainer {
+        background:
+                no-repeat
+                linear-gradient(
+                        rgba(0, 0, 0, 0.25),
+                        rgba(0, 0, 0, 0.25)
+                ),
+                url('../media/waitForIt.jpeg');
+        background-size: cover;
         padding: 5px;
         min-height: 30rem;
     }
