@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Details/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Details/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/RSVP/RSVPForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RSVP/RSVPForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +115,9 @@
       <workItem from="1571663485839" duration="1679000" />
       <workItem from="1577672590062" duration="11689000" />
       <workItem from="1577820224108" duration="22998000" />
-      <workItem from="1577905298315" duration="516000" />
+      <workItem from="1577905298315" duration="1138000" />
+      <workItem from="1578060361944" duration="1551000" />
+      <workItem from="1578430868082" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -413,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577904710040</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="working on better validation for max guest count">
+      <created>1577905823522</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1577905823522</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

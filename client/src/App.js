@@ -13,63 +13,65 @@ import {connect} from "react-redux";
 import {handleScroll} from "./Helpers/handleScroll.jsx";
 
 const theme = createMuiTheme({
-    overrides: {
-        palette: {
-            primary: '#fff',
-            secondary: 'rgba(9,9,9,0.54)',
+  overrides: {
+    palette: {
+      primary: '#fff',
+      secondary: 'rgba(9,9,9,0.54)',
+    },
+    MuiSelect: {
+      icon: {
+        color: 'white',
+      }
+    },
+    MuiFormHelperText: {
+      root: {
+        color: 'white',
+      }
+    },
+    MuiInput: {
+      root: {
+        color: 'white'
+      },
+      input: {
+        color: 'white'
+      },
+      underline: {
+        '&:before': { //underline color when textfield is inactive
+          borderBottomColor: 'white!important',
         },
-        MuiSelect: {
-          icon: {
-              color: 'white',
-          }
+        '&:hover:not($disabled):before': { //underline color when hovered
+          borderBottomColor: 'white!important',
         },
-        MuiFormHelperText: {
-            root: {
-                color: 'white',
-            }
+        '&:after': { //underline color when textfield is inactive
+          borderBottomColor: 'gray!important',
         },
-        MuiInput: {
-            root: {
-                color: 'white'
-            },
-            input: {
-                color: 'white'
-            },
-            underline: {
-                '&:before': { //underline color when textfield is inactive
-                    borderBottomColor: 'white!important',
-                },
-                '&:hover:not($disabled):before': { //underline color when hovered
-                    borderBottomColor: 'white!important',
-                },
-                '&:after': { //underline color when textfield is inactive
-                    borderBottomColor: 'gray!important',
-                },
-            },
+      },
 
-        }
     }
+  }
 });
 
 let App = ({dispatch}) => {
+  if ((window.location.host) && (window.location.host.includes('baker')) && (window.location.protocol !== "https:")) {
+    window.location.protocol = "https";
+  }
 
-    handleScroll(dispatch);
-
-    return (
-        <MuiThemeProvider theme={theme}>
-            <Grid style={{overflow: 'hidden'}} container align={'center'} justify={'center'}>
-                <Grid item xs={12}>
-                    <Navigation/>
-                    <LandingPage/>
-                    <NextNavigation/>
-                    <OurStory/>
-                    <CountdownContainer/>
-                    <Details/>
-                    <RSVPContainer/>
-                </Grid>
-            </Grid>
-        </MuiThemeProvider>
-    )
+  handleScroll(dispatch);
+  return (
+    <MuiThemeProvider theme={theme}>
+      <Grid style={{overflow: 'hidden'}} container align={'center'} justify={'center'}>
+        <Grid item xs={12}>
+          <Navigation/>
+          <LandingPage/>
+          <NextNavigation/>
+          <OurStory/>
+          <CountdownContainer/>
+          <Details/>
+          <RSVPContainer/>
+        </Grid>
+      </Grid>
+    </MuiThemeProvider>
+  )
 };
 
 App = connect()(App);
