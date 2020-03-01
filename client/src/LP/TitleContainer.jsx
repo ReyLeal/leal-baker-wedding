@@ -7,6 +7,9 @@ export const TitleContainer = () =>
                 <Grid className={'dateSection'} item xs={12}>
                     March 14th, 2020
                 </Grid>
+                <Grid className={'timeSection'} item xs={12}>
+                    11am - 4pm
+                </Grid>
                 <Grid className={'saveTheDate'} item xs={12}>
                     Save The Date
                 </Grid>

@@ -112,6 +112,13 @@ body {
     padding: .5rem;
 }
 
+.timeSection {
+    font-family: 'Bitter', serif!important;
+    font-weight: 400!important;
+    font-size: 1.8rem;
+    padding: .5rem;
+}
+
 .saveTheDate {
     font-size: 2.5rem;
     padding-bottom: .5rem;
@@ -304,7 +311,7 @@ body {
         font-size: 3.75rem;
     }
 
-    .dateSection {
+    .timeSection {
         padding-bottom: 1rem;
     }
 
