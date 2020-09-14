@@ -31,14 +31,14 @@ app.use(logger('dev'));
 //   res.json({message: 'Hello, World!'});
 // });
 
-router.post('/ping', async (req, res) => {
-  const params  = {...req.body};
-  const requestStart = Date.now();
-  await axios.get(`${params.server}`)
-    .catch(err =>  {});
-  const ping = (Date.now() - requestStart);
-  return res.json({success: true, ping})
-});
+// router.post('/ping', async (req, res) => {
+//   const params  = {...req.body};
+//   const requestStart = Date.now();
+//   await axios.get(`${params.server}`)
+//     .catch(err =>  {});
+//   const ping = (Date.now() - requestStart);
+//   return res.json({success: true, ping})
+// });
 
 
 // router.post('/getGuestCount', async (req, res) => {
