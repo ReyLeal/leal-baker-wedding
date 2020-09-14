@@ -63,12 +63,12 @@ export default function TestResults({ currentSegment, pastSegments }) {
   const formatPingForChart = (segment) => (segment.map((ping, index) => ({ ping, index })));
   const calculateAveragePing = (segment) => Math.round((segment.reduce((a, b) => (a + b)) / segment.length));
   const progress = (segment) => Math.round((segment.length / 29) * 100);
-  const getMinPing = (segment) => [...getSegmentInstance(segment)].sort()[0];
-  const getMaxPing = (segment) => [...getSegmentInstance(segment)].sort().reverse()[0];
+  const getMinPing = (segment) => [...getSegmentInstance(segment)].sort((a, b) => a - b)[0];
+  const getMaxPing = (segment) => [...getSegmentInstance(segment)].sort((a, b) => a - b).reverse()[0];
   const getTypicalPing = (segment) => {
     const calculateSegment = [...getSegmentInstance(segment)];
-    calculateSegment.sort().pop();
-    calculateSegment.sort().reverse().pop();
+    calculateSegment.sort((a, b) => a - b).pop();
+    calculateSegment.sort((a, b) => a - b).reverse().pop();
     if (calculateSegment.length < 1) {
       return 0;
     }
