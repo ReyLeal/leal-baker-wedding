@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Select } from '@material-ui/core';
+import { Grid, Select, MenuItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { servers } from './serverList';
 
@@ -48,9 +48,14 @@ export default function ServerSelect({ testing, server, setServer, setCurrentSeg
       disabled={testing}
       margin="normal"
     >
-      {servers.map(item =>
-        <option value={item.value} key={item.value}>{item.label}</option>)
-      }
+      {servers.map(item => (
+        <MenuItem
+          key={item.value}
+          value={item.value}
+        >
+          {item.label}
+        </MenuItem>
+      ))}
     </Select>;
 
   return (
