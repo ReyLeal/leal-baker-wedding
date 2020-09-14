@@ -2,11 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="987351b4-8cbc-46c0-b033-635e5b91dc66" name="Default" comment="working on better validation for max guest count">
+      <change afterPath="$PROJECT_DIR$/client/public/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/images/webb-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ConnectionCheck/ConnectionCheck.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ConnectionCheck/PingChart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ConnectionCheck/ServerSelect.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ConnectionCheck/StartTestButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ConnectionCheck/TestResults.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ConnectionCheck/serverList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/ThemeProvider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wedding_site.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/LP/TitleContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/LP/TitleContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/rings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/CountdownContainer/CountdownContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Details/Details.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/LP/LPCountDown.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/LP/LandingPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/LP/NextNavigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/LP/TitleContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/LP/__tests__/LandingPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/LP/__tests__/__snapshots__/LandingPage.js.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Navigation/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OurStory/OurStory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/RSVP/RSVPContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/RSVP/RSVPForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/RSVP/ValidationDialog.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Reducers/Reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Reducers/Reducers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/BPattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/downArrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/japan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/lpBackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/registryPhoto.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/thelatta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/waitForIt.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/media/whatToWear.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/testingRedux/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/testingRedux/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/testingRedux/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/testingRedux/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/testingRedux/reducers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/testingRedux/registerServiceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Scripts/getRSVPs.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Scripts/getRSVPs.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Scripts/saveRSVPs.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Scripts/saveRSVPs.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RSVPCodes.model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/RSVPs.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/RSVPs.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secrets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,14 +73,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/client/src/LP/__tests__/LandingPage.js" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectId" id="1SQX4SDlZgc1jswFq5ltGgLZqin" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Frontend/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,12 +96,6 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/media" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Frontend/src" />
-      <recent name="$PROJECT_DIR$/Frontend" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Frontend/src" />
       <recent name="$PROJECT_DIR$/Frontend" />
@@ -55,20 +103,15 @@
       <recent name="$PROJECT_DIR$/Backend/model" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/public/images" />
+      <recent name="$PROJECT_DIR$/client/public" />
+      <recent name="$PROJECT_DIR$/client/src/media" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Frontend/src" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,8 +122,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -126,6 +181,9 @@
       <workItem from="1580934780042" duration="231000" />
       <workItem from="1581281684190" duration="743000" />
       <workItem from="1583033472370" duration="165000" />
+      <workItem from="1598916696033" duration="451000" />
+      <workItem from="1599931352099" duration="4000" />
+      <workItem from="1599931451718" duration="28570000" />
     </task>
     <task id="LOCAL-00001" summary="Added the countdown timer.">
       <created>1523928826725</created>
@@ -471,5 +529,51 @@
     <MESSAGE value="changes made to update different pieces of the site." />
     <MESSAGE value="working on better validation for max guest count" />
     <option name="LAST_COMMIT_MESSAGE" value="working on better validation for max guest count" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="202" key="#ESLint" timestamp="1599934238098">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="202" key="#ESLint/0.23.1680.1027@0.23.1680.1027" timestamp="1599934238098" />
+    <state x="629" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599936228058">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="629" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1599936228058" />
+    <state x="530" y="218" key="#start" timestamp="1599933113572">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="530" y="218" key="#start/0.23.1680.1027@0.23.1680.1027" timestamp="1599933113572" />
+    <state x="434" y="50" key="CommitChangelistDialog2" timestamp="1599960064427">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="434" y="50" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1599960064427" />
+    <state width="1584" height="274" key="GridCell.Tab.0.bottom" timestamp="1600047056653">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1584" height="274" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1600047056653" />
+    <state width="1584" height="274" key="GridCell.Tab.0.center" timestamp="1600047056652">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1584" height="274" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1600047056652" />
+    <state width="1584" height="274" key="GridCell.Tab.0.left" timestamp="1600047056651">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1584" height="274" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1600047056651" />
+    <state width="1584" height="274" key="GridCell.Tab.0.right" timestamp="1600047056652">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1584" height="274" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1600047056652" />
+    <state x="622" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599945877739">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="622" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.1027@0.23.1680.1027" timestamp="1599945877739" />
+    <state x="488" y="277" width="703" height="518" key="find.popup" timestamp="1599945688501">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="488" y="277" width="703" height="518" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1599945688501" />
+    <state x="505" y="250" key="search.everywhere.popup" timestamp="1599933711657">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1599933711657" />
   </component>
 </project>

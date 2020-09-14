@@ -1,18 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-const getSecret = require('./secrets');
-const saveRSVPs = require("./controller/Scripts/saveRSVPs.controller");
-const getCount = require("./controller/Scripts/getRSVPs.controller");
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const path = require("path");
+const axios = require('axios');
 
 const app = express();
 const router = express.Router();
 
 const API_PORT = process.env.PORT || 8000;
 
-mongoose.connect(getSecret('dbUri'), { useNewUrlParser: true } );
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true } );
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
@@ -27,30 +26,30 @@ app.use(function (req, res, next) {
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(logger('dev'));
+//
+// router.get('/', (req, res) => {
+//   res.json({message: 'Hello, World!'});
+// });
 
-router.get('/', (req, res) => {
-  res.json({message: 'Hello, World!'});
+router.post('/ping', async (req, res) => {
+  const params  = {...req.body};
+  const requestStart = Date.now();
+  await axios.get(`${params.server}`)
+    .catch(err =>  {});
+  const ping = (Date.now() - requestStart);
+  return res.json({success: true, ping})
 });
 
-router.post('/saveRSVP', (req, res) => {
-  const params = {...req.body};
-  saveRSVPs(params)
-    .then(({success, message}) => {
-      return res.json({success, message})
-    })
-    .catch(err =>  res.json({success: false, error: err}));
-});
 
-
-router.post('/getGuestCount', async (req, res) => {
-  const {rsvpCode} = {...req.body};
-  getCount(rsvpCode)
-    .then((count) => {
-      console.log(count);
-      return res.json({success: true, maxGuests: count})
-    })
-    .catch(err =>  res.json({success: false, error: err}));
-});
+// router.post('/getGuestCount', async (req, res) => {
+//   const {rsvpCode} = {...req.body};
+//   getCount(rsvpCode)
+//     .then((count) => {
+//       console.log(count);
+//       return res.json({success: true, maxGuests: count})
+//     })
+//     .catch(err =>  res.json({success: false, error: err}));
+// });
 
 
 app.on('listening',function(){
