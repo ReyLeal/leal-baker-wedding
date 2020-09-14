@@ -1,19 +1,18 @@
-require('dotenv').config();
+// require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const path = require("path");
-const axios = require('axios');
 
 const app = express();
 const router = express.Router();
 
 const API_PORT = process.env.PORT || 8000;
 
-mongoose.connect(process.env.DB_URI, { useNewUrlParser: true } );
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+// mongoose.connect(process.env.DB_URI, { useNewUrlParser: true } );
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
