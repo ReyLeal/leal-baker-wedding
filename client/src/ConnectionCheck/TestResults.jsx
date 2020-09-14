@@ -59,13 +59,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TestResults({ currentSegment, pastSegments }) {
   const classes = useStyles();
+  const getSegmentInstance = (segment) => JSON.parse(JSON.stringify(segment));
   const formatPingForChart = (segment) => (segment.map((ping, index) => ({ ping, index })));
   const calculateAveragePing = (segment) => Math.round((segment.reduce((a, b) => (a + b)) / segment.length));
   const progress = (segment) => Math.round((segment.length / 29) * 100);
-  const getMinPing = (segment) => [...segment].sort()[0];
-  const getMaxPing = (segment) => [...segment].sort().reverse()[0];
+  const getMinPing = (segment) => [...getSegmentInstance(segment)].sort()[0];
+  const getMaxPing = (segment) => [...getSegmentInstance(segment)].sort().reverse()[0];
   const getTypicalPing = (segment) => {
-    const calculateSegment = [...segment];
+    const calculateSegment = [...getSegmentInstance(segment)];
     calculateSegment.sort().pop();
     calculateSegment.sort().reverse().pop();
     if (calculateSegment.length < 1) {
