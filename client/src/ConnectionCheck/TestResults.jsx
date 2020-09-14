@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { CheckCircleOutline } from '@material-ui/icons';
 import PingChart from './PingChart';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   dataContainer: {
     overflow: 'hidden'
   },
@@ -14,6 +14,9 @@ const useStyles = makeStyles(() => ({
   pastDataContainer: {
     maxHeight: '15rem',
     overflowY: 'auto',
+    [theme.breakpoints.down('md')]: {
+      maxHeight: '30rem',
+    },
   },
   pingContainer: {
     fontSize: 20,
@@ -47,7 +50,11 @@ const useStyles = makeStyles(() => ({
     backgroundColor: 'rgba(255,255,255,0.1)',
     height: 100,
     width: 300,
-  },
+    [theme.breakpoints.down('md')]: {
+      marginTop: '1rem',
+      width: '100%',
+    }
+    },
 }));
 
 export default function TestResults({ currentSegment, pastSegments }) {
@@ -68,7 +75,7 @@ export default function TestResults({ currentSegment, pastSegments }) {
   };
   const renderSection = (segment) => (
     <Grid container alignItems="center" justify="center" className={classes.currentDataContainer}>
-      <Grid item xs={6} md={2} alignItems="center" justify="center" className={classes.pingContainer}>
+      <Grid item xs={4} md={2} alignItems="center" justify="center" className={classes.pingContainer}>
         {(progress(segment) < 100) ?
           (
             <CircularProgress
@@ -81,7 +88,7 @@ export default function TestResults({ currentSegment, pastSegments }) {
           )
         }
       </Grid>
-      <Grid item xs={6} md={5} alignItems="center" justify="center" className={classes.pingContainer}>
+      <Grid item xs={8} md={5} alignItems="center" justify="center" className={classes.pingContainer}>
         <Grid container justify="center" alignItems="center">
           <span className={classes.pingDescription}>Average Ping -</span>
           {' '}
